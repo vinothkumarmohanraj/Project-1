@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Centered Dropdowns</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="sidebar">
+        <i class="bi bi-chevron-left toggle-btn"></i>
+        <h2><img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\image1.svg" alt="nothing" class='firstimage'></h2>
+        <ul class="list-unstyled">
+            <li><a href="#"><i class="bi bi-house-door"></i><span>Overview</span></a></li>
+            <li><a href="#"><i class="bi bi-gear-fill"></i><span>Move Crypto</span></a></li>
+            <li><a href="#"><i class="bi bi-star-fill"></i><span>Tokens</span></a></li>
+            <li><a href="#"><i class="bi bi-square"></i><span>NFTs</span></a></li>
+            <li><a href="#"><i class="bi bi-controller"></i><span>Games</span></a></li>
+        </ul>
+
+        <!-- Terms of Use Section -->
+        <div class="terms-of-use">
+            <i class="bi bi-file-text"></i> <!-- Icon for Terms of Use -->
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        
+        <div class="header">
+            <div class="firstcont" >
+                <h3>SWAP</h3>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text"  placeholder=" &#xf002 Search..." >
+                
+            </div>
+
+            <!-- Additional Button -->
+            <button type="button" class="additional-btn">
+               
+                <span>Connect Wallet</span>
+            </button>
+
+            <!-- Dropdown Box -->
+            
+                <div class="first">
+                    <div class="image-dropdown">
+                        <button class="trigger-button"><img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" class="sar"></button>
+                        <div class="image-dropdown-content">
+                          <div class="dropdown-item" data-value="value1">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 1">
+                            <span>Option 1</span>
+                          </div>
+                          <div class="dropdown-item" data-value="value2">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 2">
+                            <span>Option 2</span>
+                          </div>
+                          <div class="dropdown-item" data-value="value3">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 3">
+                            <span>Option 3</span>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="second">
+                    <div class="image-dropdown">
+                        <button class="trigger-button"><img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" class="sar"></button>
+                        <div class="image-dropdown-content">
+                          <div class="dropdown-item" data-value="value1">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 1">
+                            <span>Option 1</span>
+                          </div>
+                          <div class="dropdown-item" data-value="value2">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 2">
+                            <span>Option 2</span>
+                          </div>
+                          <div class="dropdown-item" data-value="value3">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\floki.png" alt="Option 3">
+                            <span>Option 3</span>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            
+        </div>
+
+        <div class="centered-container">
+            
+            
+            <!-- Existing Dropdowns -->
+             <div class = "firstdrop">
+                <!-- Example single danger button -->
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\bitcoin.jpg" alt="ETH Logo" class="token-logo">
+                        <span>ETH</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                        
+            </div>
+
+            <div class="secondrop">
+                <h4>Swap From</h4>
+                <div class="swap-container">
+                    <label for="swap-input"></label>
+                    <div class="swap-input-group">
+                        <button class="swap-token-btn">
+                            <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\bitcoin.jpg" alt="ETH Logo" class="token-logo">
+                            <span>ETH</span>
+                            <span class="dropdown-arrow">&#9662;</span>
+                        </button>
+                        <input type="text" id="swap-input" placeholder="">
+                    </div>
+                </div> 
+                
+
+             </div>
+
+            <div class="thirdrop">
+                <h4>Swap To</h4>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="C:\Users\vinot\OneDrive\Desktop\NTU WEB 3 programs\final\bitcoin.jpg" alt="ETH Logo" class="token-logo">
+                        <span>ETH</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                
+                </div>   
+                
+            </div>   
+
+            <div class="fourthdrop">
+                
+                <div class="image-dropdown">
+                    <button class="container-button btn-darkS dropdown-toggle"type="button" id="dropdownMenuButton3" data-toggle="dropup" aria-haspopup="true" aria-expanded="false">
+                        Advanced Option</button>
+                       
+                    <div class="image-dropdown-content">
+                    <div class="dropdown-item" data-value="value1">
+                        <img src="option1.jpg" alt="Option 1">
+                        <span>Option 1</span>
+                    </div>
+                    <div class="dropdown-item" data-value="value2">
+                        <img src="option2.jpg" alt="Option 2">
+                        <span>Option 2</span>
+                    </div>
+                    <div class="dropdown-item" data-value="value3">
+                        <img src="option3.jpg" alt="Option 3">
+                        <span>Option 3</span>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+                <!-- Fifth Button -->
+            <button type="button" class="third ">
+                    <span>Connect Wallet</span>
+                </button>
+                <div class="sign">
+                <p> <a href="https://consensys.io/terms-of-use">Terms-of-use</a>
+                </div>
+    </div>
+
+        <!-- Help Icon -->
+            <div class="help-icon">
+                <a href="#" title="Help">
+                    <img src="https://via.placeholder.com/30x30?text=Help" alt="Help Icon">
+                </a>
+            </div>
+    
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to handle sidebar toggle
+        document.querySelector('.toggle-btn').addEventListener('click', function() {
+            const sidebar = document.querySelector('.sidebar');
+            const isCollapsed = sidebar.classList.toggle('collapsed');
+            document.querySelector('.toggle-btn').classList.toggle('collapsed', isCollapsed);
+        });
+    </script>
+</body>
+</html>
